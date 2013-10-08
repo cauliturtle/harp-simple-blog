@@ -1,0 +1,10 @@
+<ul class="blog-list">
+<% 
+var blogs = public.blogs.data;
+for(var blog in blogs){ %>
+<li>
+    <a href="/blogs/<%=blog%>"><%=blogs[blog].title%></a>
+    <p><%=blogs[blog].excerpt%></p>
+</li>
+<% } %>
+</ul>

@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title><%- title != title %></title>
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    </head>
+    <body>
+    <%- partial("_parts/header") %>
+    <div id="main-content" class="container" role="content">
+        <%- yield %>
+    </div>
+    <%- partial("_parts/footer") %>
+    </body>
+</html>

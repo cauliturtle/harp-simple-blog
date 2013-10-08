@@ -1,0 +1,87 @@
+/* It is the style file in less */
+
+@textColor: #444444;
+
+/* mixins */
+.center-block() {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix() {
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+body {
+    font-family: georgia,serif;
+    font-size: 1em;
+    color: @textColor;
+}
+
+a {
+    color: darken(@textColor, 10%);
+    transition: all .2s ease-in;
+    text-decoration: underline;
+    &:hover{ 
+        color: fade(@textColor, 80%);
+    }
+}
+
+.container {
+    width: 960px;
+    .center-block();
+
+    @media (max-width: 960px) {
+        width: auto;
+    }
+}
+
+/* partial - header & nav */
+header {
+    border-bottom: 1px solid fade(@textColor, 20%);
+    padding: 1em 0px;
+    .clearfix();
+
+    h1 {
+        float: left;
+    }
+    nav {
+        text-align: right;
+        padding: 1em;
+        a {
+            display: inline-block;
+            padding: 1em;
+        }
+    }
+
+    @media (max-width: 960px) {
+        h1 {
+            float: none;
+            margin: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+        }
+    }
+}
+
+/* partial - footer */
+.copyright {
+    margin-top: 1em;
+    border-top: 1px solid fade(@textColor, 20%);
+    padding: 1em 0px;
+    text-align: right;
+}
+
+/* main content */
+#main-content {
+    min-height: 400px;
+}

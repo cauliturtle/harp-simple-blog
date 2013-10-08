@@ -1,0 +1,10 @@
+body{font-family:georgia,serif;font-size:1em;color:#444444;}
+a{color:#2b2b2b;transition:all 0.2s ease-in;text-decoration:underline;}a:hover{color:rgba(68, 68, 68, 0.8);}
+.container{width:960px;margin-left:auto;margin-right:auto;}@media (max-width:960px){.container{width:auto;}}
+header{border-bottom:1px solid rgba(68, 68, 68, 0.2);padding:1em 0px;}header:before,header:after{content:" ";display:table;}
+header:after{clear:both;}
+header h1{float:left;}
+header nav{text-align:right;padding:1em;}header nav a{display:inline-block;padding:1em;}
+@media (max-width:960px){header h1{float:none;margin:1em 0;text-align:center;} header nav{text-align:center;}}
+.copyright{margin-top:1em;border-top:1px solid rgba(68, 68, 68, 0.2);padding:1em 0px;text-align:right;}
+#main-content{min-height:400px;}
