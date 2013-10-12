@@ -1,0 +1,13 @@
+<% if(current.path.length > 1){ %> 
+<div class="breadcrumb">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<% for(var i in current.path){ %>
+		<li <%- current.path[i] === current.source ? 'class="active"' : '' %>>
+			<span class="divider">/</span>
+			<a href="/<%=current.path[i] %>"><%=: current.path[i] | capitalize %></a>
+		</li>
+		<% } %>
+	</ul>
+</div>
+<% } %>
