@@ -19,6 +19,8 @@ It is an simple real world example on using [Harp](https://github.com/sintaxi/ha
 
 Your simple blog is now running at http://localhost:9000
 
+Here is the detailed blog post: [http://www.codersgrid.com/2013/10/14/make-a-blog-with-harp/](http://www.codersgrid.com/2013/10/14/make-a-blog-with-harp/)
+
 ### Site Structure
 
 	/my-simple-blog 			# the webroot folder
